@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.sarvika.geolocation;
+
+message Coordinates {
+  float x = 1;
+  float y = 2;
+}
+
+message SearchRequest {
+  string location = 1;
+}
+
+service LocationSearchService {
+  rpc search(SearchRequest) returns (Coordinates);
+}
