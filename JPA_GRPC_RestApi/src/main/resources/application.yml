@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: jpagrpc
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/geolocation
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: sysadmin
+    password: root
+jpa.default.properties.hibernate.hbm2ddl.auto: update
