@@ -19,15 +19,6 @@ public class GeolocationController {
     public Optional<GeoLocationEntity> findByLocation(String location){
         return mySQLCrudRepository.findByLocation(location); }
 
-//    @Get(value = "locations/search")
-//    public List<GeoLocationEntity> findBySomeLocation(@QueryValue(value = "location",defaultValue = "") String location) {
-//        System.out.println(location);
-//        var results = mySQLCrudRepository.with
-////        var queryResult = mySQLCrudRepository.findBySomeLocation(location);
-////        System.out.println(queryResult);
-////        return queryResult;
-//    }
-
     @Get("locations/id/{id}")
     public Optional<GeoLocationEntity> GetLocationByID(Long id) { return mySQLCrudRepository.findById(id); }
 
@@ -36,6 +27,15 @@ public class GeolocationController {
     public Iterable<GeoLocationEntity> listAllLocation(){
         return mySQLCrudRepository.findAll();
     }
+
+//    @Get(value = "locations/search")
+//    public List<GeoLocationEntity> findBySomeLocation(@QueryValue(value = "location",defaultValue = "") String location) {
+//        System.out.println(location);
+//        var results = mySQLCrudRepository.with
+//        var queryResult = mySQLCrudRepository.findBySomeLocation(location);
+//        System.out.println(queryResult);
+//        return queryResult;
+//    }
 }
 
 /*

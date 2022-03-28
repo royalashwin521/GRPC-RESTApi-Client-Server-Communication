@@ -17,5 +17,4 @@ public interface MySQLCrudRepository extends CrudRepository<GeoLocationEntity, L
 //    @Query(value = "select gle.location from GeoLocationEntity  gle where gle.location like '%pur%' ")
 //    List<GeoLocationEntity> findBySomeLocation(@QueryValue(value = "location") String location);
 
-//    List<GeoLocationEntity> findBySomeLocation();
 }

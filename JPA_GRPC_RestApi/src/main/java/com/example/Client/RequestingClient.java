@@ -8,6 +8,7 @@ import io.grpc.ManagedChannelBuilder;
 
 
 public class RequestingClient {
+
         public static void main(String[] args) {
             ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",50051).usePlaintext().build();
             JpagrpcServiceGrpc.JpagrpcServiceBlockingStub stub = JpagrpcServiceGrpc.newBlockingStub(channel);
